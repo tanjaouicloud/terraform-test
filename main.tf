@@ -228,7 +228,7 @@ resource "aws_db_instance" "default" {
   engine_version         = "8.0.34"
   storage_type           = "gp2"
   allocated_storage      = 5
-  instance_class         = "db.t2.micro"
+  instance_class         = "db.t3.micro"
   username               = var.db_username
   password               = var.db_password
   vpc_security_group_ids = ["${aws_security_group.dbsg.id}"]
