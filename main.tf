@@ -225,7 +225,7 @@ resource "aws_db_subnet_group" "default" {
 resource "aws_db_instance" "default" {
 
   engine                 = var.engine
-  engine_version         = "8.0.28"
+  engine_version         = "8.0.34"
   storage_type           = "gp2"
   allocated_storage      = 5
   instance_class         = "db.t2.micro"
